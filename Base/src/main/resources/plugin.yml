@@ -1,0 +1,170 @@
+name: Core
+version: 1.0
+main: com.sergivb01.base.BasePlugin
+depend: [Vault]
+commands:
+  staffserver:
+  settings:
+    aliases: [options, config]
+  setviewdistance:
+  warp:
+    description: Turns the server to Donor only mode.
+    aliases: [gw, globalwarp]
+  toggledonoronly:
+    description: Turns the server to Donor only mode.
+    aliases: [donoronly, donormode]
+  youtube:
+  togglesounds:
+  famous:
+  togglesc:
+  clearlagg:
+    aliases: [cl, laggclear, clearlag, clag]
+  snote:
+  staffmode:
+    aliases: [h, mod, staff]
+  announcement:
+    aliases: [announce, ann]
+  lol:
+  list:
+    aliases: [who]
+  punish:
+    aliases: [p]
+  note:
+  copyinv:
+  amivis:
+    aliases: ["amivanish", "amivanished", "?invis", "?v", "?vis", "invis?", "vis?", "v?"]
+    description: Command used to check if visible.
+  autorestart:
+    aliases: [autore]
+    description: Handle server restarts safely.
+  back:
+    description: Teleport to last known location.
+  biome:
+    description: Check the biome a player is in.
+  broadcast:
+    aliases: [bc]
+    description: Broadcast a server message.
+  clearchat:
+    aliases: [cc]
+    description: Clear the chat history.
+  clearinv:
+    aliases: [ci, clear, cpinv]
+    description: Clears a player inventory.
+  enchant:
+    description: Enchant an item.
+  entities:
+    description: Check the entities in a world.
+  fly:
+    description: Toggle flight for a player.
+  feed:
+    description: Feed a player.
+  freeze:
+    description: Command used to freeze players.
+    aliases: [ss]
+  gamemode:
+    aliases: [gm]
+    description: Update a players gamemode.
+  give:
+    description: Give an item to a player.
+  hat:
+    description: Wear something as a hat.
+  heal:
+    description: Heal a player.
+  id:
+    description: Check the id of an item.
+  ignore:
+    description: Ignore a player from messaging you
+  invsee:
+    aliases: [inventory, inventorysee, inv]
+    description: View a players inventory.
+  item:
+    aliases: [i]
+    description: Spawn an item.
+  iphistory:
+    description: Check the history an IP address or player.
+  kill:
+    aliases: [suicide, slay]
+    description: Kill a player.
+  kit:
+    description: Command to apply or use kits.
+  message:
+    aliases: [m, msg, tell, whisper, w]
+    description: Messsage an online player.
+  socialspy:
+    aliases: [ms, msgspy, pmspy, whisperspy, privatemessagespy, tellspy]
+    description: Command used to spy on pm's of players.
+  more:
+    description: Give yourself more of an item.
+  setmotd:
+  lobby:
+    aliases: [hub]
+  mutechat:
+    aliases: [mc, rc, restrictchat, disablechat]
+    description: Restricts the use of global chat.
+  lag:
+    description: View total server lag of the server.
+  near:
+    description: Check nearby entities to a player.
+  ping:
+    aliases: [p]
+    description: Checks the ping of a player.
+  playtime:
+    aliases: [pt]
+    description: Track a players total playtime of the map.
+  insider:
+  playertime:
+    aliases: [ptime]
+    description: Shows your player time.
+  removeentity:
+    aliases: [reme, rem]
+    description: Remove entities from the server.
+  rename:
+    description: Command used to rename items.
+  repair:
+    aliases: [fix]
+    description: Allows the repairing of tools.
+  donate:
+    aliases: [buy]
+    description: Gets the donation link.
+  reply:
+    aliases: [r]
+    description: Reply to a player message.
+  ad:
+  rules:
+    description: Shows the server rules.
+  skull:
+    description: Spawn the skull of a player.
+  slowchat:
+    aliases: [slow]
+    description: Sets a delay between chat messages.
+  speed:
+    description: Set your walk or fly speed.
+  stoplag:
+  killmobs:
+  sudo:
+    description: Force another player to run a command.
+  teleport:
+    aliases: [tp]
+    description: Teleport to a player or location.
+  teleportall:
+    aliases: [tpall]
+    description: Teleport all online players somewhere.
+  teleporthere:
+    aliases: [tphere]
+    description: Teleport a player to self.
+  togglemessages:
+    aliases: [togglepm, toggleprivatemessages, tpm]
+    description: Disable private messages.
+  top:
+    description: Teleport to highest spot of world
+  kits:
+  uptime:
+    description: Check how long a server has been up for.
+  vanish:
+    aliases: [v, vis, vanish, invis]
+    description: Hide yourself from other players.
+  whois:
+    aliases: [seen]
+    description: Check information about a player.
+  world:
+    description: Change your current world.

@@ -1,0 +1,299 @@
+
+# The basic information about your server
+server-info:
+  server-name: 'Lite HCF'
+  teamspeak: 'ts.example.com'
+
+# Enable database support, leave both databases false for sole Flatefile use
+database:
+  mongo:
+    enabled: false
+    host: ''
+    port: 27017
+    database: ''
+    auth:
+      enabled: false
+      username: ''
+      password: ''
+  redis:
+    enabled: false
+    host: ''
+    port: 6379
+    channel: 'hcf-communicate'
+    auth:
+      enabled: false
+      password: ''
+
+# Toggle the custom tab
+tab: false
+
+# Online donators message
+online-donors:
+  - '&7%LINE%'
+  - '&6&lOnline Donators'
+  - ' '
+  - ' &7- &e%MEDICS%'
+  - '&7%LINE%'
+
+#Scoreboard options
+scoreboard:
+  title: '&6&lFactions &7| &cHCF'
+  active-class: '&a&lActive Class&7'
+
+
+# Toggle deathban signs drop
+death-signs: true
+
+# How large should Warzone radius be?
+warzone: 750
+
+# Toggle found diamond alerts
+found-diamonds: true
+
+# Enable kitmap mode?
+kit-map: false
+
+#Deathban Base time
+deathban-time: 180
+
+# Specific Deathban times can be set by giving the player the following permissions
+# hcf.deathban.<time>
+#
+# Avaliable times:
+# 5m/10m/15m/30m/35m/40m/45m/60m/90m/120m/150m
+
+
+
+# Can't build how many blocks from spawn?
+unbuildable-range: 300
+
+# Change the result on the Help command
+help:
+  - '&7&m-----------------------------------------------------'
+  - '&6&l  Factions Help'
+  - '&a '
+  - '&e  World Border:'
+  - '  &7* &eOverworld&7: &f%OVERWORLD%'
+  - '  &7* &eNether&7: &f%NETHER%'
+  - '  &7* &eEnd&7: &f%END%'
+  - '&a '
+  - '&e Support:'
+  - '  &7* &ets.example.com'
+  - '&a '
+  - '&6 Discord:'
+  - '  &7* &eexample.com/discord'
+  - '&a '
+  - '&6 Website:'
+  - '  &7* &eexample.us'
+  - '&7&m-----------------------------------------------------'
+
+# Configurable messages
+messages:
+  request: "&5[Request] &d%PLAYER% &7has requested help: &d%REASON%"
+  report: "&4[Report] &c%REPORTED%&7 has been reported by &7%REPORTER%&7 for &c%REASON%"
+  staffchat: "&5[StaffChat] &d%PLAYER%&7: %MESSAGE%"
+  serverswitch: "&5[%SERVER%] &d%PLAYER% &7has %STATUS% &d%SERVER%"
+  economy:
+    your-balance: '&eYour balance is &d$%BALANCE%'
+    others-balance: '&eBalance of &a%PLAYER%&e is &d$%BALANCE%'
+  autosave:
+    message:
+      - '&f*'
+      - '&aServer has been stopped by &a&l%PLAYER%'
+      - '&f*'
+  cobble-enabled: '&aYou can now pick up cobblestone.'
+  cobble-disabled: '&cYou can no longer pick up cobblestone.'
+  revive-message: '&cDonate at store.buycraft.net to receive these perks.'
+  deathban-bypass: '&cYou would be death-banned for %reason% but you have permission to bypass.'
+  deathbanned-eotw: '&cDeathbanned for the entirety of the map due to EOTW.Come back for SOTW.'
+  deathbanned-active: '&cYou are currently death-banned for &c&l%reason%&c. &c&l%time% &cremaining.'
+  still-deathbanned: '&cStill death-banned for %time%: &f%reason%&c. &cYou can purchase lives at our store to bypass this.'
+  deathbanned-eotw-entire: '&cYou have been death-banned for entire of EOTW. Check out our website for SOTW information.\nwww.server.com'
+  
+# Messages for Faction related messages
+  end-cannot-build: '&cYou cannot build in the end.'  
+  world-cannot-build: '&cYou cannot build within 300 blocks of spawn.'
+  failed-pearl: '&cYou cannot Enderpearl into safe-zones, used Enderpearl has been refunded.'
+  teleport-spawn: '&dTeleported to over-world spawn.'
+  cannot-attack: '&cYou cannot attack players in safezones.'
+  in-faction: '&a%player% &eis in your faction.'
+  ally-faction: '&eYou are hurting an ally &7[%allyplayer%]&e.'
+
+# Messages for SOTW command
+sotw:
+  started: '&cStarted SOTW protection for &c&l%time%&c.'
+  not-active: '&cSOTW protection already active.'
+  cancelled: '&cSOTW protection has been cancelled.'
+  ended-one: '&cSOTW Protection is now over!'
+  ended-two: '&cYou are no longer invincible!'
+
+# Help for the PvP Timer command
+pvp-timer:
+  - '&7%LINE%'
+  - '&e/pvp enable &7- &fRemoves your PvP Timer.'
+  - '&e/pvp time &7- &fCheck remaining time.'
+  - '&e/lives &7- &fLife & deathban related commands.'
+  - '&7%LINE%'
+  
+# Timer Colours / Messages
+timers:
+  enderpearl-timer: '&e&lEnderpearl'
+  enderpearl-color: '&e'
+
+  archer-timer: '&c&lArcher Tag'
+  archer-color: '&c'
+
+  notch-apple-timer: '&6&lGapple'
+  notch-apple-color: '&6'
+
+  pvp-class-warmup-timer: '&bClass Warmup'
+  pvp-class-warmup-color: '&b'
+
+  pvptimer-timer: '&a&lPvP Timer'
+  pvptimer-color: '&a&l'
+
+  sotw-timer: '&a&lSOTW'
+  sotw-color: '&c'
+
+  spawntag-timer: '&c&lSpawn Tag'
+  spawntag-color: '&c'
+
+  stuck-timer: '&c&lStuck'
+  stuck-color: '&c'
+
+  teleport-timer: '&9&lTeleport'
+  teleport-color: '&9'
+
+  event-timer: '&9&lEvent'
+  event-color: '&9&l'
+  logout-timer: '&c&lLogout'
+  logout-color: '&c'
+
+  #Timer Messages
+  messages:
+    logout-already-started: '&cYour &c&lLogout &ctimer has already started.'
+    logout-started: '&cYour &c&lLogout &ctimer has started.'
+    logout-safely: '&aYou have been safely logged out.'
+    enderpearl-expired: '&eYour &c&lEnderpearl &ecooldown has expired.'
+    enderpearl-item: '&cEnderpearl Cooldown&e: &f%time%'
+    spawn-tagged: '&cYou are now spawn-tagged for %time%.'
+
+
+# Faction Options
+faction-settings:
+  max-players: 5
+  max-allies: 1
+  show:
+  # Player Faction currently not functional.
+    player-faction:
+      - '&7%LINE%'
+      - '&f&l > %FACTION% &3- &7(%ONLINE%/%MAX% online)'
+      - ' &eHome: &c%HOME%'
+      - ' &eLeader: %LEADER%'
+      - ' &eCaptains: %CAPTAINS%'
+      - ' &eMembers: %MEMBERS%'
+      - ' &eDTR: &6[%DTR%&7/&e%MAXDTR%&6] &r%DTR-SYMBOL%'
+      - ' &eRegen: &d%REGEN%'
+      - ' &eBalance: &9$%BALANCE%&e, Kills: &c%KILLS%'
+      - '&7%LINE%'
+    system-faction:
+      - '&7%LINE%'
+      - '%FACTION%'
+      - '  &eLocation:&f %WORLD%, %X%, %Z%'
+      - '&7%LINE%'
+    road-faction:
+      - '&7%LINE%'
+      - '%FACTION%'
+      - '&7%LINE%'
+  colors:
+    teammate: '&2'
+    ally: '&9'
+    enemy: '&e'
+    safezone: '&a'
+    road: '&c'
+    target: '&d'
+    warzone: '&c'
+    default: '&7'
+    wilderness: '&d'
+    glowstone: '&6'
+
+
+# Potion Limits
+potion-limits:
+  instant-damage: 1
+  regen: 1
+  strength: 1
+  weakness: 1
+  slowness: 1
+  invis: 1
+  poison: 1
+
+# Enchantment Limits
+enchant-limits:
+  PROTECTION_ENVIRONMENTAL: 2
+  PROTECTION_FIRE: 3
+  SILK_TOUCH: 1
+  ARROW_DAMAGE: 3
+  DURABILITY: 3
+  PROTECTION_EXPLOSIONS: 3
+  LOOT_BONUS_BLOCKS: 3
+  PROTECTION_PROJECTILE: 3
+  OXYGEN: 3
+  WATER_WORKER: 1
+  THORNS: 0
+  DAMAGE_ALL: 1
+  ARROW_KNOCKBACK: 1
+  KNOCKBACK: 1
+  FIRE_ASPECT: 1
+  LOOT_BONUS_MOBS: 3
+  LUCK: 3
+  LURE: 3
+
+double_arrow: '»'
+allow_claiming_besides_roads: true
+max_claims_per_faction: 8
+
+#PUT ALL COMMANDS WITHOUT A /, Variables {PLAYER}, {RANK} PUT ALL RANKS TO LOWERCASE
+reclaim:
+  message: "&c{PLAYER} has reclaimed their {RANK}"
+  groups:
+    owner:
+      - 'say hi'
+      - 'say test'
+      - 'say {PLAYER}'
+
+# IF YOU AREN'T USING VAULT, BUT YOU ARE USING NUCLEUS PUT TO TRUE
+nucleus: false
+donor_prefix: '&c[GOD]'
+deathban_room:
+  enabled: true
+  world_name: 'world'
+  x: '-50'
+  y: '10'
+  z: '-50'
+  yaw: '0'
+  pitch: '0'
+  information_item: 'BOOK'
+  information_slot: 0
+  information_name: '&6&lDeathban Information'
+  information_message:
+    - '&7&m--------------------------------------------------'
+    - '&c&lHospital Information'
+    - '&7&m--------------------------------------------------'
+    - '&b&lRemaining deathban: &f%DEATHBAN_REMAINING%'
+    - '&b&lLives: &f%LIVES%'
+    - '&bBuy lives at http://store.myserver.com'
+    - '&7&m--------------------------------------------------'
+  use_lives_item: 'NETHER_STAR'
+  use_lives_slot: 4
+  use_lives_name: '&6&lUse a live &7(Right click)'
+  use_lives_message:
+    - '&aYou have successfully used a &a&llife&a.'
+    - '&aRemaining lives: &f%LIVES_REMAINING%'
+  teleport_spawn_item: 'ARROW'
+  teleport_spawn_slot: 8
+  teleport_spawn_name: '&6&lTeleport to spawn &7(Right click)'
+  teleport_spawn_message_success: '&aYou have been successfully sent to spawn.'
+  teleport_spawn_message_failed: '&cYou cannot teleport to spawn yet, you need to wait out your deathban or you can use a life by clicking the nether star.'
+  allowed_commands:
+    - 'f who'

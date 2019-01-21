@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Base" />
+        <module name="HCF" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Base" target="1.8" />
+      <module name="HCF" target="1.8" />
+      <module name="RhinoBase" target="1.8" />
+      <module name="RhinoHCF" target="1.8" />
+      <module name="RhinoSourceMEMES" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

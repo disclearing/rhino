@@ -1,0 +1,29 @@
+
+lockdown-enabled: false
+
+kit-map: false
+
+announcements:
+  list: []
+  delay: 300
+
+broadcast:
+  format: '&e[Base] %1$s'
+
+chat:
+  enabled: false
+  slowed: false
+  slowed-delay: 15
+
+full-server-kick-message: '&cThe server is full. &e(%1$s/%2$s) \n\n&cDonate to get a premium slot. {donate link}'
+
+server-rules-format: '&cRules: '
+
+banwave:
+ # - ''
+ # - ''
+ # - ''
+
+nucleus: false
+teamspeak: 'ts.myserver.us'
+end-open: true
